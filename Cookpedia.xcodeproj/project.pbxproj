@@ -11,6 +11,41 @@
 		080722B029E38FA900410DE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080722AF29E38FA900410DE2 /* ContentView.swift */; };
 		080722B229E38FAA00410DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 080722B129E38FAA00410DE2 /* Assets.xcassets */; };
 		080722B529E38FAA00410DE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 080722B429E38FAA00410DE2 /* Preview Assets.xcassets */; };
+		080722CF29E390F200410DE2 /* Urbanist-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722BD29E390F100410DE2 /* Urbanist-Medium.ttf */; };
+		080722D029E390F200410DE2 /* Urbanist-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722BE29E390F100410DE2 /* Urbanist-BlackItalic.ttf */; };
+		080722D129E390F200410DE2 /* Urbanist-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722BF29E390F100410DE2 /* Urbanist-LightItalic.ttf */; };
+		080722D229E390F200410DE2 /* Urbanist-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722C029E390F100410DE2 /* Urbanist-ExtraBoldItalic.ttf */; };
+		080722D329E390F200410DE2 /* Urbanist-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722C129E390F200410DE2 /* Urbanist-MediumItalic.ttf */; };
+		080722D429E390F200410DE2 /* Urbanist-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722C229E390F200410DE2 /* Urbanist-ThinItalic.ttf */; };
+		080722D529E390F200410DE2 /* Urbanist-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722C329E390F200410DE2 /* Urbanist-Thin.ttf */; };
+		080722D629E390F200410DE2 /* Urbanist-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722C429E390F200410DE2 /* Urbanist-Regular.ttf */; };
+		080722D729E390F200410DE2 /* Urbanist-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722C529E390F200410DE2 /* Urbanist-BoldItalic.ttf */; };
+		080722D829E390F200410DE2 /* Urbanist-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722C629E390F200410DE2 /* Urbanist-Black.ttf */; };
+		080722D929E390F200410DE2 /* Urbanist-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722C729E390F200410DE2 /* Urbanist-SemiBoldItalic.ttf */; };
+		080722DA29E390F200410DE2 /* Urbanist-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722C829E390F200410DE2 /* Urbanist-Bold.ttf */; };
+		080722DB29E390F200410DE2 /* Urbanist-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722C929E390F200410DE2 /* Urbanist-SemiBold.ttf */; };
+		080722DC29E390F200410DE2 /* Urbanist-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722CA29E390F200410DE2 /* Urbanist-Italic.ttf */; };
+		080722DD29E390F200410DE2 /* Urbanist-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722CB29E390F200410DE2 /* Urbanist-ExtraLight.ttf */; };
+		080722DE29E390F200410DE2 /* Urbanist-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722CC29E390F200410DE2 /* Urbanist-ExtraLightItalic.ttf */; };
+		080722DF29E390F200410DE2 /* Urbanist-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722CD29E390F200410DE2 /* Urbanist-ExtraBold.ttf */; };
+		080722E029E390F200410DE2 /* Urbanist-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080722CE29E390F200410DE2 /* Urbanist-Light.ttf */; };
+		080722E229E391FD00410DE2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080722E129E391FD00410DE2 /* HomeView.swift */; };
+		080722E529E3923E00410DE2 /* CustomBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080722E429E3923E00410DE2 /* CustomBanner.swift */; };
+		080722E729E393EF00410DE2 /* CustomTitleCatDashBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080722E629E393EF00410DE2 /* CustomTitleCatDashBoard.swift */; };
+		080722E929E397F800410DE2 /* CustomCardMeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080722E829E397F800410DE2 /* CustomCardMeal.swift */; };
+		080722EC29E3989200410DE2 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080722EB29E3989200410DE2 /* Meal.swift */; };
+		080722F329E4741D00410DE2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080722F229E4741D00410DE2 /* ProfileView.swift */; };
+		080722F529E4744E00410DE2 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080722F429E4744E00410DE2 /* RecipesView.swift */; };
+		080722F729E4745D00410DE2 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080722F629E4745D00410DE2 /* DiscoverView.swift */; };
+		080722FA29E484B800410DE2 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080722F929E484B800410DE2 /* NotificationsView.swift */; };
+		080722FE29E4867000410DE2 /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080722FD29E4867000410DE2 /* BookmarkView.swift */; };
+		0807230129E4946600410DE2 /* MealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807230029E4946600410DE2 /* MealView.swift */; };
+		0807230329E49FDC00410DE2 /* CustomInfoCardUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807230229E49FDC00410DE2 /* CustomInfoCardUser.swift */; };
+		0807230529E4A8B000410DE2 /* CustomLabelInfoMeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807230429E4A8B000410DE2 /* CustomLabelInfoMeal.swift */; };
+		0807230729E4B26300410DE2 /* CustomStepInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807230629E4B26300410DE2 /* CustomStepInfo.swift */; };
+		0807230A29E4BE2200410DE2 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807230929E4BE2200410DE2 /* NotificationType.swift */; };
+		0807230C29E4CB0200410DE2 /* CustomCardSystemNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807230B29E4CB0200410DE2 /* CustomCardSystemNotification.swift */; };
+		0807230E29E4D97300410DE2 /* CustomCardGeneralNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807230D29E4D97300410DE2 /* CustomCardGeneralNotification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +54,41 @@
 		080722AF29E38FA900410DE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		080722B129E38FAA00410DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		080722B429E38FAA00410DE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		080722BD29E390F100410DE2 /* Urbanist-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Medium.ttf"; sourceTree = "<group>"; };
+		080722BE29E390F100410DE2 /* Urbanist-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-BlackItalic.ttf"; sourceTree = "<group>"; };
+		080722BF29E390F100410DE2 /* Urbanist-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-LightItalic.ttf"; sourceTree = "<group>"; };
+		080722C029E390F100410DE2 /* Urbanist-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		080722C129E390F200410DE2 /* Urbanist-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-MediumItalic.ttf"; sourceTree = "<group>"; };
+		080722C229E390F200410DE2 /* Urbanist-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-ThinItalic.ttf"; sourceTree = "<group>"; };
+		080722C329E390F200410DE2 /* Urbanist-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Thin.ttf"; sourceTree = "<group>"; };
+		080722C429E390F200410DE2 /* Urbanist-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Regular.ttf"; sourceTree = "<group>"; };
+		080722C529E390F200410DE2 /* Urbanist-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-BoldItalic.ttf"; sourceTree = "<group>"; };
+		080722C629E390F200410DE2 /* Urbanist-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Black.ttf"; sourceTree = "<group>"; };
+		080722C729E390F200410DE2 /* Urbanist-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		080722C829E390F200410DE2 /* Urbanist-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Bold.ttf"; sourceTree = "<group>"; };
+		080722C929E390F200410DE2 /* Urbanist-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-SemiBold.ttf"; sourceTree = "<group>"; };
+		080722CA29E390F200410DE2 /* Urbanist-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Italic.ttf"; sourceTree = "<group>"; };
+		080722CB29E390F200410DE2 /* Urbanist-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-ExtraLight.ttf"; sourceTree = "<group>"; };
+		080722CC29E390F200410DE2 /* Urbanist-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		080722CD29E390F200410DE2 /* Urbanist-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-ExtraBold.ttf"; sourceTree = "<group>"; };
+		080722CE29E390F200410DE2 /* Urbanist-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Light.ttf"; sourceTree = "<group>"; };
+		080722E129E391FD00410DE2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		080722E429E3923E00410DE2 /* CustomBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBanner.swift; sourceTree = "<group>"; };
+		080722E629E393EF00410DE2 /* CustomTitleCatDashBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleCatDashBoard.swift; sourceTree = "<group>"; };
+		080722E829E397F800410DE2 /* CustomCardMeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardMeal.swift; sourceTree = "<group>"; };
+		080722EB29E3989200410DE2 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		080722F229E4741D00410DE2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		080722F429E4744E00410DE2 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
+		080722F629E4745D00410DE2 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		080722F929E484B800410DE2 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		080722FD29E4867000410DE2 /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
+		0807230029E4946600410DE2 /* MealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealView.swift; sourceTree = "<group>"; };
+		0807230229E49FDC00410DE2 /* CustomInfoCardUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInfoCardUser.swift; sourceTree = "<group>"; };
+		0807230429E4A8B000410DE2 /* CustomLabelInfoMeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelInfoMeal.swift; sourceTree = "<group>"; };
+		0807230629E4B26300410DE2 /* CustomStepInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepInfo.swift; sourceTree = "<group>"; };
+		0807230929E4BE2200410DE2 /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
+		0807230B29E4CB0200410DE2 /* CustomCardSystemNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardSystemNotification.swift; sourceTree = "<group>"; };
+		0807230D29E4D97300410DE2 /* CustomCardGeneralNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardGeneralNotification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +121,16 @@
 		080722AC29E38FA900410DE2 /* Cookpedia */ = {
 			isa = PBXGroup;
 			children = (
+				080722E329E3922E00410DE2 /* Components */,
+				080722FF29E4944C00410DE2 /* Meal */,
+				080722FB29E4865000410DE2 /* Bookmark */,
+				080722F829E4849800410DE2 /* Notifications */,
+				080722F129E473F800410DE2 /* Profile */,
+				080722F029E473E500410DE2 /* Recipes */,
+				080722EF29E473DD00410DE2 /* Discover */,
+				080722EA29E3980000410DE2 /* Data */,
+				080722BC29E3908F00410DE2 /* Font */,
+				080722BB29E38FF000410DE2 /* Home */,
 				080722AD29E38FA900410DE2 /* CookpediaApp.swift */,
 				080722AF29E38FA900410DE2 /* ContentView.swift */,
 				080722B129E38FAA00410DE2 /* Assets.xcassets */,
@@ -65,6 +145,119 @@
 				080722B429E38FAA00410DE2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		080722BB29E38FF000410DE2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				080722E129E391FD00410DE2 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		080722BC29E3908F00410DE2 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				080722C629E390F200410DE2 /* Urbanist-Black.ttf */,
+				080722BE29E390F100410DE2 /* Urbanist-BlackItalic.ttf */,
+				080722C829E390F200410DE2 /* Urbanist-Bold.ttf */,
+				080722C529E390F200410DE2 /* Urbanist-BoldItalic.ttf */,
+				080722CD29E390F200410DE2 /* Urbanist-ExtraBold.ttf */,
+				080722C029E390F100410DE2 /* Urbanist-ExtraBoldItalic.ttf */,
+				080722CB29E390F200410DE2 /* Urbanist-ExtraLight.ttf */,
+				080722CC29E390F200410DE2 /* Urbanist-ExtraLightItalic.ttf */,
+				080722CA29E390F200410DE2 /* Urbanist-Italic.ttf */,
+				080722CE29E390F200410DE2 /* Urbanist-Light.ttf */,
+				080722BF29E390F100410DE2 /* Urbanist-LightItalic.ttf */,
+				080722BD29E390F100410DE2 /* Urbanist-Medium.ttf */,
+				080722C129E390F200410DE2 /* Urbanist-MediumItalic.ttf */,
+				080722C429E390F200410DE2 /* Urbanist-Regular.ttf */,
+				080722C929E390F200410DE2 /* Urbanist-SemiBold.ttf */,
+				080722C729E390F200410DE2 /* Urbanist-SemiBoldItalic.ttf */,
+				080722C329E390F200410DE2 /* Urbanist-Thin.ttf */,
+				080722C229E390F200410DE2 /* Urbanist-ThinItalic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		080722E329E3922E00410DE2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				080722E429E3923E00410DE2 /* CustomBanner.swift */,
+				080722E629E393EF00410DE2 /* CustomTitleCatDashBoard.swift */,
+				080722E829E397F800410DE2 /* CustomCardMeal.swift */,
+				0807230229E49FDC00410DE2 /* CustomInfoCardUser.swift */,
+				0807230429E4A8B000410DE2 /* CustomLabelInfoMeal.swift */,
+				0807230629E4B26300410DE2 /* CustomStepInfo.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		080722EA29E3980000410DE2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				080722EB29E3989200410DE2 /* Meal.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		080722EF29E473DD00410DE2 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				080722F629E4745D00410DE2 /* DiscoverView.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		080722F029E473E500410DE2 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				080722F429E4744E00410DE2 /* RecipesView.swift */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		080722F129E473F800410DE2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				080722F229E4741D00410DE2 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		080722F829E4849800410DE2 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				0807230829E4BB6E00410DE2 /* Data */,
+				080722F929E484B800410DE2 /* NotificationsView.swift */,
+				0807230B29E4CB0200410DE2 /* CustomCardSystemNotification.swift */,
+				0807230D29E4D97300410DE2 /* CustomCardGeneralNotification.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		080722FB29E4865000410DE2 /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				080722FD29E4867000410DE2 /* BookmarkView.swift */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		080722FF29E4944C00410DE2 /* Meal */ = {
+			isa = PBXGroup;
+			children = (
+				0807230029E4946600410DE2 /* MealView.swift */,
+			);
+			path = Meal;
+			sourceTree = "<group>";
+		};
+		0807230829E4BB6E00410DE2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0807230929E4BE2200410DE2 /* NotificationType.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +318,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				080722DE29E390F200410DE2 /* Urbanist-ExtraLightItalic.ttf in Resources */,
+				080722DB29E390F200410DE2 /* Urbanist-SemiBold.ttf in Resources */,
+				080722D829E390F200410DE2 /* Urbanist-Black.ttf in Resources */,
+				080722E029E390F200410DE2 /* Urbanist-Light.ttf in Resources */,
+				080722D729E390F200410DE2 /* Urbanist-BoldItalic.ttf in Resources */,
+				080722D529E390F200410DE2 /* Urbanist-Thin.ttf in Resources */,
+				080722D229E390F200410DE2 /* Urbanist-ExtraBoldItalic.ttf in Resources */,
+				080722D429E390F200410DE2 /* Urbanist-ThinItalic.ttf in Resources */,
+				080722D029E390F200410DE2 /* Urbanist-BlackItalic.ttf in Resources */,
 				080722B529E38FAA00410DE2 /* Preview Assets.xcassets in Resources */,
+				080722D129E390F200410DE2 /* Urbanist-LightItalic.ttf in Resources */,
+				080722D329E390F200410DE2 /* Urbanist-MediumItalic.ttf in Resources */,
+				080722DC29E390F200410DE2 /* Urbanist-Italic.ttf in Resources */,
+				080722CF29E390F200410DE2 /* Urbanist-Medium.ttf in Resources */,
 				080722B229E38FAA00410DE2 /* Assets.xcassets in Resources */,
+				080722DF29E390F200410DE2 /* Urbanist-ExtraBold.ttf in Resources */,
+				080722DA29E390F200410DE2 /* Urbanist-Bold.ttf in Resources */,
+				080722D629E390F200410DE2 /* Urbanist-Regular.ttf in Resources */,
+				080722DD29E390F200410DE2 /* Urbanist-ExtraLight.ttf in Resources */,
+				080722D929E390F200410DE2 /* Urbanist-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +348,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0807230129E4946600410DE2 /* MealView.swift in Sources */,
+				0807230E29E4D97300410DE2 /* CustomCardGeneralNotification.swift in Sources */,
+				080722F329E4741D00410DE2 /* ProfileView.swift in Sources */,
+				0807230729E4B26300410DE2 /* CustomStepInfo.swift in Sources */,
+				080722E229E391FD00410DE2 /* HomeView.swift in Sources */,
+				0807230329E49FDC00410DE2 /* CustomInfoCardUser.swift in Sources */,
 				080722B029E38FA900410DE2 /* ContentView.swift in Sources */,
+				080722FA29E484B800410DE2 /* NotificationsView.swift in Sources */,
+				080722EC29E3989200410DE2 /* Meal.swift in Sources */,
+				0807230C29E4CB0200410DE2 /* CustomCardSystemNotification.swift in Sources */,
+				080722E529E3923E00410DE2 /* CustomBanner.swift in Sources */,
+				080722FE29E4867000410DE2 /* BookmarkView.swift in Sources */,
+				080722E929E397F800410DE2 /* CustomCardMeal.swift in Sources */,
 				080722AE29E38FA900410DE2 /* CookpediaApp.swift in Sources */,
+				080722F729E4745D00410DE2 /* DiscoverView.swift in Sources */,
+				080722F529E4744E00410DE2 /* RecipesView.swift in Sources */,
+				080722E729E393EF00410DE2 /* CustomTitleCatDashBoard.swift in Sources */,
+				0807230529E4A8B000410DE2 /* CustomLabelInfoMeal.swift in Sources */,
+				0807230A29E4BE2200410DE2 /* NotificationType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -275,6 +503,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +533,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
