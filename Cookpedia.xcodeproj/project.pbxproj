@@ -46,6 +46,8 @@
 		0807230A29E4BE2200410DE2 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807230929E4BE2200410DE2 /* NotificationType.swift */; };
 		0807230C29E4CB0200410DE2 /* CustomCardSystemNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807230B29E4CB0200410DE2 /* CustomCardSystemNotification.swift */; };
 		0807230E29E4D97300410DE2 /* CustomCardGeneralNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807230D29E4D97300410DE2 /* CustomCardGeneralNotification.swift */; };
+		0807231029E5E48200410DE2 /* SystemNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807230F29E5E48200410DE2 /* SystemNotificationsView.swift */; };
+		0807231229E5E4B600410DE2 /* GeneralNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807231129E5E4B600410DE2 /* GeneralNotificationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,8 @@
 		0807230929E4BE2200410DE2 /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
 		0807230B29E4CB0200410DE2 /* CustomCardSystemNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardSystemNotification.swift; sourceTree = "<group>"; };
 		0807230D29E4D97300410DE2 /* CustomCardGeneralNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardGeneralNotification.swift; sourceTree = "<group>"; };
+		0807230F29E5E48200410DE2 /* SystemNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNotificationsView.swift; sourceTree = "<group>"; };
+		0807231129E5E4B600410DE2 /* GeneralNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralNotificationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +236,8 @@
 				080722F929E484B800410DE2 /* NotificationsView.swift */,
 				0807230B29E4CB0200410DE2 /* CustomCardSystemNotification.swift */,
 				0807230D29E4D97300410DE2 /* CustomCardGeneralNotification.swift */,
+				0807230F29E5E48200410DE2 /* SystemNotificationsView.swift */,
+				0807231129E5E4B600410DE2 /* GeneralNotificationsView.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -358,8 +364,10 @@
 				080722FA29E484B800410DE2 /* NotificationsView.swift in Sources */,
 				080722EC29E3989200410DE2 /* Meal.swift in Sources */,
 				0807230C29E4CB0200410DE2 /* CustomCardSystemNotification.swift in Sources */,
+				0807231029E5E48200410DE2 /* SystemNotificationsView.swift in Sources */,
 				080722E529E3923E00410DE2 /* CustomBanner.swift in Sources */,
 				080722FE29E4867000410DE2 /* BookmarkView.swift in Sources */,
+				0807231229E5E4B600410DE2 /* GeneralNotificationsView.swift in Sources */,
 				080722E929E397F800410DE2 /* CustomCardMeal.swift in Sources */,
 				080722AE29E38FA900410DE2 /* CookpediaApp.swift in Sources */,
 				080722F729E4745D00410DE2 /* DiscoverView.swift in Sources */,
