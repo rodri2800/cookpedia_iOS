@@ -9,16 +9,27 @@ import SwiftUI
 
 
 private struct MealImage:View{
-    let url:String
+    let url:String?
     var body: some View{
-        AsyncImage(url: URL(string: url), content: { image in
-            image.resizable()
-                .scaledToFill()
-                .frame(height: 280)
+        
             
-        }, placeholder: {
-            ProgressView()
-        })
+        if let url {
+            AsyncImage(url: URL(string: url), content: { image in
+                image.resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(height: 280)
+                    .padding(.top)
+            }, placeholder: {
+                ContainerShimmer()
+                    .frame(height: 280)
+                    .scaledToFill()
+            })
+            
+        }else{
+            ContainerShimmer()
+                .frame(height: 280)
+                .scaledToFill()
+        }
         
     }
 }
@@ -61,45 +72,40 @@ private struct Description:View{
 }
 
 private struct Ingredients:View{
+    
+    var ingredients:Array<String> = []
+    
     var body: some View{
+        
         VStack(alignment: .leading){
             Text("Ingredients:")
                 .font(.title2)
                 .fontWeight(.bold)
-            CustomStepInfo(
-                numstep: 1,
-                description: "1 head of lettuce, chopped"
-            )
-            CustomStepInfo(
-                numstep: 2,
-                description: "1 head of lettuce, chopped"
-            )
-            CustomStepInfo(
-                numstep: 3,
-                description: "1 head of lettuce, chopped"
-            )
+            ForEach(Array(ingredients.enumerated()), id:\.1){
+                index, item in
+                CustomStepInfo(numstep: (index+1), description: item)
+            }
         }.frame(maxWidth: .infinity)
     }
 }
 
 private struct Instructions:View{
+    
+    var instructions:Array<String> = []
+    
     var body: some View{
         VStack(alignment: .leading){
             Text("Instructions:")
                 .font(.title2)
                 .fontWeight(.bold)
-            CustomStepInfo(
-                numstep: 1,
-                description: "Stir the water starch and then pour half of the mixture to the simmering pot. Wait for around 30 seconds and then pour the other half. You can slightly taste the tofu and add pinch of salt if not salty enough. By the way, if you feel it is too spicy, add some sugar can milder the taste. But be carefully as the broth is very hot at this point."
-            )
-            CustomStepInfo(
-                numstep: 2,
-                description: "1 head of lettuce, chopped"
-            )
-            CustomStepInfo(
-                numstep: 3,
-                description: "1 head of lettuce, chopped"
-            )
+            ForEach(Array(instructions.enumerated()), id: \.1){
+                index, instruction in
+                CustomStepInfo(
+                    numstep: (index+1),
+                    description: instruction
+                )
+            }
+            
         }.frame(maxWidth: .infinity)
     }
 }
@@ -107,36 +113,52 @@ private struct Instructions:View{
 
 struct MealView: View {
     
+    @StateObject private var viewModel = MealViewModelImpl(service: MealServiceImpl())
+    
+    @EnvironmentObject private var mealSaved:CustomCardMealServiceImpl
+    
     var meal:Meal
+    
+    //var detailsMeal:DetailsMeal = DetailsMeal.dummyData
     
     var body: some View {
         ScrollView {
             VStack{
-                MealImage(url: meal.strMealThumb)
+                MealImage(url: viewModel.detailsMeal.strMealThumb)
                 VStack {
-                    TitleMeal(name: meal.strMeal)
+                    TitleMeal(name: viewModel.detailsMeal.strMeal ?? "Sin info")
                     Divider()
                     CustomInfoCardUser(
                         nameUser: "Jane Copper",
                         idUser: "@jane_copper")
                     Divider()
-                    Description(
-                        category: "Beef",
-                        area: "Chinese"
-                    )
-                    Divider()
-                    Ingredients()
-                    Divider()
-                    Instructions()
+                    if viewModel.isLoading==false{
+                        Description(
+                            category: viewModel.detailsMeal.strCategory ?? "Sin info",
+                            area: viewModel.detailsMeal.strArea ?? "Sin info"
+                        )
+                        Divider()
+                        Ingredients(
+                            ingredients: viewModel.detailsMeal.getIngredientList()
+                        )
+                        Divider()
+                        Instructions(
+                            instructions: viewModel.detailsMeal.splitInstructions()
+                        )
+                    }
                 }.padding()
                 
             }
         }
         .toolbar{
             Button{
-                
+                if mealSaved.mealsSaved.contains(meal){
+                    mealSaved.removeMeal(meal: meal)
+                }else{
+                    mealSaved.saveMeal(meal: meal)
+                }
             }label: {
-                Image(systemName: "bookmark")
+                Image(systemName: mealSaved.mealsSaved.contains(meal) ?  "bookmark.fill" : "bookmark")
             }
             Button{
                 
@@ -149,15 +171,18 @@ struct MealView: View {
                 Image(systemName: "ellipsis.circle")
             }
         }
+        .task {
+            await viewModel.getInfoMeal(id:meal.idMeal)
+        }
     }
 }
 
 struct MealView_Previews: PreviewProvider {
     static var previews: some View {
         MealView(meal: Meal(
-            idMeal : "52874",
+            idMeal : "53050",
             strMeal: "Beef and Mustard Pie",
             strMealThumb : "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg"
-        ))
+        )).environmentObject(CustomCardMealServiceImpl())
     }
 }

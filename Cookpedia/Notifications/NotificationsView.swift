@@ -19,10 +19,12 @@ struct NotificationsView: View {
             TabView{
                 GeneralNotificationsView()
                     .tabItem{
+                        Image(systemName: "doc.fill")
                         Text("General")
                     }
                 SystemNotificationsView()
                     .tabItem{
+                        Image(systemName: "gear.circle.fill")
                         Text("System")
                     }
             }

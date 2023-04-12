@@ -39,6 +39,8 @@ private struct FollowButton:View{
     var body: some View{
         Text("Follow")
             .foregroundColor(Color.white)
+            .fontWeight(.bold)
+            .font(.system(size: 12))
             .padding(.horizontal, 18.0)
             .padding(.vertical, 8.0)
             .background(Color.accentColor)

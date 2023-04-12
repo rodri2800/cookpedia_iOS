@@ -33,17 +33,23 @@ private struct BackgroundImageWithGradient: View {
 }
 
 private struct ButtonAdd:View{
+    
+    var saved:Bool
+    var action: () -> Void
+    
     var body: some View{
         HStack{
             Spacer()
-            Image(systemName: "bookmark")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 12)
-                .padding(12)
-                .foregroundColor(Color.white)
-                .background(Color("PrimaryColor"))
-                .clipShape(Circle())
+            Button(action: action, label: {
+                Image(systemName: saved ? "bookmark.fill" : "bookmark" )
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 12)
+                    .padding(12)
+                    .foregroundColor(Color.white)
+                    .background(Color("PrimaryColor"))
+                    .clipShape(Circle())
+            })
         }
     }
 }
@@ -79,6 +85,10 @@ private struct UserInfo:View{
 
 struct CustomCardMeal: View {
     
+    @EnvironmentObject private var mealSaved:CustomCardMealServiceImpl
+    
+    @StateObject private var viewModel = CustomCardMealViewModelImpl()
+    
     var meal:Meal
     
     var body: some View {
@@ -90,7 +100,15 @@ struct CustomCardMeal: View {
                     BackgroundImageWithGradient(url: meal.strMealThumb)
                     
                     VStack(){
-                        ButtonAdd()
+                        ButtonAdd(
+                            saved: mealSaved.mealsSaved.contains(meal)
+                        ){
+                            if mealSaved.mealsSaved.contains(meal){
+                                mealSaved.removeMeal(meal: meal)
+                            }else{
+                                mealSaved.saveMeal(meal: meal)
+                            }
+                        }
                         Spacer()
                         NameMeal(name: meal.strMeal)
                         UserInfo()
@@ -111,7 +129,7 @@ struct CustomCardMeal_Previews: PreviewProvider {
                 strMeal: "Beef and Mustard Pie",
                 strMealThumb : "https://www.themealdb.com/images/media/meals/ysqrus1487425681.jpg"
             )
-        )
+        ).environmentObject(CustomCardMealServiceImpl())
     }
 }
 

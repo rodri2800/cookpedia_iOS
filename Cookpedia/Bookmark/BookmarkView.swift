@@ -15,13 +15,13 @@ private var meals:Array<Meal> = [
     ),
     Meal(
         idMeal : "52875",
-        strMeal: "Beef and Mustard Pie",
-        strMealThumb : "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg"
+        strMeal: "Chicken Ham and Leek Pie",
+        strMealThumb : "https://www.themealdb.com/images/media/meals/xrrtss1511555269.jpg"
     ),
     Meal(
         idMeal : "52876",
-        strMeal: "Beef and Mustard Pie",
-        strMealThumb : "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg"
+        strMeal: "Minced Beef Pie",
+        strMealThumb : "https://www.themealdb.com/images/media/meals/xwutvy1511555540.jpg"
     ),
     Meal(
         idMeal : "52877",
@@ -76,13 +76,18 @@ struct BookmarkView: View {
         GridItem(.adaptive(minimum: 150))
     ]
     
+    @EnvironmentObject var mealSaved:CustomCardMealServiceImpl
     
     var body: some View {
         ScrollView{
-            LazyVGrid(columns: adaptiveColumns, spacing: 20){
-                ForEach(meals, id: \.self){
-                    meal in
-                    CustomCardMeal(meal: meal)
+            if mealSaved.mealsSaved.isEmpty{
+                Text("No tienes recetas guardadas")
+            }else{
+                LazyVGrid(columns: adaptiveColumns, spacing: 20){
+                    ForEach(mealSaved.mealsSaved, id: \.self){
+                        meal in
+                        CustomCardMeal(meal: meal)
+                    }
                 }
             }
         }
@@ -100,6 +105,6 @@ struct BookmarkView: View {
 
 struct BookmarkView_Previews: PreviewProvider {
     static var previews: some View {
-        BookmarkView()
+        BookmarkView().environmentObject(CustomCardMealServiceImpl())
     }
 }

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var mealSaved = CustomCardMealServiceImpl()
+    
     var body: some View {
         NavigationStack{
             TabView{
@@ -33,6 +36,7 @@ struct ContentView: View {
                     }
             }
         }
+        .environmentObject(mealSaved)
     }
 }
 

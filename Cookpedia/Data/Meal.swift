@@ -8,7 +8,7 @@
 import Foundation
 
 
-class Meal: Hashable {
+class Meal: Hashable, Codable {
     let idMeal: String
     let strMeal: String
     let strMealThumb: String

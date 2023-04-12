@@ -9,62 +9,35 @@ import SwiftUI
 
 
 private struct SectionMealView:View{
+    
     var title:String
+    
+    var meals:Set<Meal>?
+    
     var body: some View{
         VStack{
             CustomTitleCatDashBoard(title: title)
             ScrollView (.horizontal){
                 HStack{
                     Spacer()
-                    CustomCardMeal(
-                        meal: Meal(
-                            idMeal : "52874",
-                            strMeal: "Beef and Mustard Pie",
-                            strMealThumb : "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg"
-                        )
-                    )
-                    CustomCardMeal(
-                        meal: Meal(
-                            idMeal: "52816",
-                            strMeal: "Roasted Eggplant With Tahini, Pine Nuts, and Lentils",
-                            strMealThumb: "https://www.themealdb.com/images/media/meals/ysqrus1487425681.jpg"
-                        )
-                    )
-                    CustomCardMeal(
-                        meal: Meal(
-                            idMeal : "52874",
-                            strMeal: "Beef and Mustard Pie",
-                            strMealThumb : "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg"
-                        )
-                    )
-                    CustomCardMeal(
-                        meal: Meal(
-                            idMeal : "52874",
-                            strMeal: "Beef and Mustard Pie",
-                            strMealThumb : "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg"
-                        )
-                    )
-                    CustomCardMeal(
-                        meal: Meal(
-                            idMeal : "52874",
-                            strMeal: "Beef and Mustard Pie",
-                            strMealThumb : "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg"
-                        )
-                    )
-                    CustomCardMeal(
-                        meal: Meal(
-                            idMeal : "52874",
-                            strMeal: "Beef and Mustard Pie",
-                            strMealThumb : "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg"
-                        )
-                    )
-                    CustomCardMeal(
-                        meal: Meal(
-                            idMeal : "52874",
-                            strMeal: "Beef and Mustard Pie",
-                            strMealThumb : "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg"
-                        )
-                    )
+                    
+                    if meals != nil && meals?.count ?? 0 > 0 {
+                        
+                        ForEach(Array(meals!), id:\.self) { meal in
+                            CustomCardMeal(
+                                meal: meal
+                            )
+                        }
+                        
+                    }else{
+                        ForEach(0..<10){
+                            item in
+                            ContainerShimmer()
+                                .frame(width: 150, height: 210)
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                        }
+                    }
+                    
                 }
             }
         }
@@ -72,6 +45,10 @@ private struct SectionMealView:View{
 }
 
 struct HomeView: View {
+    
+    @StateObject private var viewModel = HomeViewModelImpl(service: MealServiceImpl())
+
+    
     var body: some View {
         NavigationView {
             ScrollView{
@@ -79,9 +56,9 @@ struct HomeView: View {
                     Spacer()
                         .frame(height: 10)
                     CustomBanner()
-                    SectionMealView(title: "Recent Recipes")
-                    SectionMealView(title: "Your Recipes")
-                    SectionMealView(title: "Your Bookmark")
+                    SectionMealView(title: "Recent Recipes", meals: viewModel.listMealsRecentRecipes)
+                    SectionMealView(title: "Your Recipes", meals: viewModel.listMealsYourRecipes)
+                    SectionMealView(title: "Your Bookmark", meals: viewModel.listMealsYourBookmark)
                 }
             }
             .navigationTitle("Cookpedia")
@@ -102,11 +79,14 @@ struct HomeView: View {
                 )
             }
         }
+        .task {
+            await viewModel.getMeals()
+        }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView().environmentObject(CustomCardMealServiceImpl())
     }
 }
