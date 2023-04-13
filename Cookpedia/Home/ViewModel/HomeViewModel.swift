@@ -16,7 +16,6 @@ final class HomeViewModelImpl: HomeViewModel{
     
     @Published private(set) var listMealsRecentRecipes = Set<Meal>()
     @Published private(set) var listMealsYourRecipes = Set<Meal>()
-    @Published private(set) var listMealsYourBookmark = Set<Meal>()
     
     private let service:MealService
     
@@ -32,9 +31,6 @@ final class HomeViewModelImpl: HomeViewModel{
             }
             if self.listMealsYourRecipes.isEmpty{
                 self.listMealsYourRecipes = try await service.fetchListMeals(num: 10)
-            }
-            if self.listMealsYourBookmark.isEmpty{
-                self.listMealsYourBookmark = try await service.fetchListMeals(num: 10)
             }
             
         }catch{

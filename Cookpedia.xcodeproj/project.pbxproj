@@ -57,6 +57,13 @@
 		0807232829E6750700410DE2 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807232729E6750700410DE2 /* RecipesViewModel.swift */; };
 		08B8CEAF29E710180050A11A /* CustomCardMealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8CEAE29E710180050A11A /* CustomCardMealViewModel.swift */; };
 		08B8CEB229E7159B0050A11A /* CustomCardMealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8CEB129E7159B0050A11A /* CustomCardMealService.swift */; };
+		08B8CEB429E737520050A11A /* CustomCardChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8CEB329E737520050A11A /* CustomCardChef.swift */; };
+		08B8CEB629E739D90050A11A /* CustomCardCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8CEB529E739D90050A11A /* CustomCardCategory.swift */; };
+		08B8CEB829E73DD80050A11A /* MealCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8CEB729E73DD80050A11A /* MealCategory.swift */; };
+		08B8CEBB29E74AEE0050A11A /* CategoryMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8CEBA29E74AEE0050A11A /* CategoryMealView.swift */; };
+		08B8CEBE29E74E050050A11A /* CategoryMealServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8CEBD29E74E050050A11A /* CategoryMealServices.swift */; };
+		08B8CEC129E7507A0050A11A /* CategoryMealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8CEC029E7507A0050A11A /* CategoryMealViewModel.swift */; };
+		08B8CEC429E750C30050A11A /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8CEC329E750C30050A11A /* DiscoverViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +118,13 @@
 		0807232729E6750700410DE2 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
 		08B8CEAE29E710180050A11A /* CustomCardMealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardMealViewModel.swift; sourceTree = "<group>"; };
 		08B8CEB129E7159B0050A11A /* CustomCardMealService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardMealService.swift; sourceTree = "<group>"; };
+		08B8CEB329E737520050A11A /* CustomCardChef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardChef.swift; sourceTree = "<group>"; };
+		08B8CEB529E739D90050A11A /* CustomCardCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardCategory.swift; sourceTree = "<group>"; };
+		08B8CEB729E73DD80050A11A /* MealCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCategory.swift; sourceTree = "<group>"; };
+		08B8CEBA29E74AEE0050A11A /* CategoryMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMealView.swift; sourceTree = "<group>"; };
+		08B8CEBD29E74E050050A11A /* CategoryMealServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMealServices.swift; sourceTree = "<group>"; };
+		08B8CEC029E7507A0050A11A /* CategoryMealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMealViewModel.swift; sourceTree = "<group>"; };
+		08B8CEC329E750C30050A11A /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +159,7 @@
 			children = (
 				0807231829E61E0B00410DE2 /* Constants */,
 				080722E329E3922E00410DE2 /* Components */,
+				08B8CEB929E74AB90050A11A /* Category */,
 				080722FF29E4944C00410DE2 /* Meal */,
 				080722FB29E4865000410DE2 /* Bookmark */,
 				080722F829E4849800410DE2 /* Notifications */,
@@ -207,13 +222,15 @@
 		080722E329E3922E00410DE2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0807232929E67CAE00410DE2 /* CustomCardMeal */,
 				080722E429E3923E00410DE2 /* CustomBanner.swift */,
 				080722E629E393EF00410DE2 /* CustomTitleCatDashBoard.swift */,
-				0807232929E67CAE00410DE2 /* CustomCardMeal */,
 				0807230229E49FDC00410DE2 /* CustomInfoCardUser.swift */,
 				0807230429E4A8B000410DE2 /* CustomLabelInfoMeal.swift */,
 				0807230629E4B26300410DE2 /* CustomStepInfo.swift */,
 				0807232129E645E700410DE2 /* ContainerShimmer.swift */,
+				08B8CEB329E737520050A11A /* CustomCardChef.swift */,
+				08B8CEB529E739D90050A11A /* CustomCardCategory.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -222,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				080722EB29E3989200410DE2 /* Meal.swift */,
+				08B8CEB729E73DD80050A11A /* MealCategory.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -229,6 +247,7 @@
 		080722EF29E473DD00410DE2 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				08B8CEC229E750AA0050A11A /* ViewModel */,
 				080722F629E4745D00410DE2 /* DiscoverView.swift */,
 			);
 			path = Discover;
@@ -365,6 +384,40 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		08B8CEB929E74AB90050A11A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				08B8CEBF29E74FEF0050A11A /* ViewModel */,
+				08B8CEBC29E74DEA0050A11A /* Service */,
+				08B8CEBA29E74AEE0050A11A /* CategoryMealView.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		08B8CEBC29E74DEA0050A11A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				08B8CEBD29E74E050050A11A /* CategoryMealServices.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		08B8CEBF29E74FEF0050A11A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				08B8CEC029E7507A0050A11A /* CategoryMealViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		08B8CEC229E750AA0050A11A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				08B8CEC329E750C30050A11A /* DiscoverViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -456,11 +509,16 @@
 				0807230129E4946600410DE2 /* MealView.swift in Sources */,
 				0807230E29E4D97300410DE2 /* CustomCardGeneralNotification.swift in Sources */,
 				080722F329E4741D00410DE2 /* ProfileView.swift in Sources */,
+				08B8CEB829E73DD80050A11A /* MealCategory.swift in Sources */,
 				0807230729E4B26300410DE2 /* CustomStepInfo.swift in Sources */,
 				080722E229E391FD00410DE2 /* HomeView.swift in Sources */,
+				08B8CEC429E750C30050A11A /* DiscoverViewModel.swift in Sources */,
+				08B8CEBE29E74E050050A11A /* CategoryMealServices.swift in Sources */,
 				0807230329E49FDC00410DE2 /* CustomInfoCardUser.swift in Sources */,
+				08B8CEB629E739D90050A11A /* CustomCardCategory.swift in Sources */,
 				0807232229E645E700410DE2 /* ContainerShimmer.swift in Sources */,
 				080722B029E38FA900410DE2 /* ContentView.swift in Sources */,
+				08B8CEC129E7507A0050A11A /* CategoryMealViewModel.swift in Sources */,
 				08B8CEAF29E710180050A11A /* CustomCardMealViewModel.swift in Sources */,
 				080722FA29E484B800410DE2 /* NotificationsView.swift in Sources */,
 				080722EC29E3989200410DE2 /* Meal.swift in Sources */,
@@ -469,10 +527,12 @@
 				0807232829E6750700410DE2 /* RecipesViewModel.swift in Sources */,
 				0807230C29E4CB0200410DE2 /* CustomCardSystemNotification.swift in Sources */,
 				0807231029E5E48200410DE2 /* SystemNotificationsView.swift in Sources */,
+				08B8CEBB29E74AEE0050A11A /* CategoryMealView.swift in Sources */,
 				080722E529E3923E00410DE2 /* CustomBanner.swift in Sources */,
 				080722FE29E4867000410DE2 /* BookmarkView.swift in Sources */,
 				0807231229E5E4B600410DE2 /* GeneralNotificationsView.swift in Sources */,
 				080722E929E397F800410DE2 /* CustomCardMeal.swift in Sources */,
+				08B8CEB429E737520050A11A /* CustomCardChef.swift in Sources */,
 				080722AE29E38FA900410DE2 /* CookpediaApp.swift in Sources */,
 				0807231729E5E90200410DE2 /* MealViewModel.swift in Sources */,
 				0807231D29E6266800410DE2 /* MealService.swift in Sources */,

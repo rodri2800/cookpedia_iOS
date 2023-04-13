@@ -9,7 +9,12 @@ import SwiftUI
 
 
 private struct MealImage:View{
+    
+    @State private var paddingTop:CGFloat = 0
+    
     let url:String?
+    
+    
     var body: some View{
         
             
@@ -18,7 +23,7 @@ private struct MealImage:View{
                 image.resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(height: 280)
-                    .padding(.top)
+                    .padding(.top, -paddingTop)
             }, placeholder: {
                 ContainerShimmer()
                     .frame(height: 280)

@@ -17,32 +17,34 @@ struct RecipesView: View {
     
     var body: some View {
         
-        ScrollView {
-            LazyVGrid(columns: adaptiveColumns, spacing: 20){
-                if viewModel.listMealsYourRecipes.count > 0 {
-                    
-                    ForEach(Array(viewModel.listMealsYourRecipes), id:\.self) { meal in
-                        CustomCardMeal(
-                            meal: meal
-                        )
-                    }
-                    
-                }else{
-                    ForEach(0..<15){
-                        item in
-                        ContainerShimmer()
-                            .frame(width: 150, height: 210)
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: adaptiveColumns, spacing: 20){
+                    if viewModel.listMealsYourRecipes.count > 0 {
+                        
+                        ForEach(Array(viewModel.listMealsYourRecipes), id:\.self) { meal in
+                            CustomCardMeal(
+                                meal: meal
+                            )
+                        }
+                        
+                    }else{
+                        ForEach(0..<15){
+                            item in
+                            ContainerShimmer()
+                                .frame(width: 150, height: 210)
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                        }
                     }
                 }
+                    .task {
+                        await viewModel.getMeals()
+                        
+                    }
+                    .navigationTitle("My Recipes")
+                    .padding()
+                    
             }
-                .task {
-                    await viewModel.getMeals()
-                    
-                }
-                .navigationTitle("My Recipes")
-                
-            
         }
     }
 }

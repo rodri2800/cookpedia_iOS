@@ -13,7 +13,7 @@ struct CustomStepInfo: View {
     var description:String
     
     var body: some View {
-        HStack(spacing: 8.0){
+        HStack(alignment: .top, spacing: 8.0){
             Text("\(numstep)")
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.accentColor)
@@ -22,6 +22,7 @@ struct CustomStepInfo: View {
                 .background(Color.accentColor.opacity(0.2))
                 .clipShape(Circle())
             Text(description)
+                .padding(.top, 5.5)
             Spacer()
         }
     }

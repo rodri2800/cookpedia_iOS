@@ -15,6 +15,7 @@ struct CustomBanner: View {
             .frame(maxWidth: 350)
             .clipShape(RoundedRectangle(cornerRadius: 10))
             .padding()
+            .shadow(color: Color.accentColor.opacity(0.4), radius: 5, y: 4)
             
     }
 }

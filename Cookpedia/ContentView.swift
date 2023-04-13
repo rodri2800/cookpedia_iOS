@@ -19,6 +19,7 @@ struct ContentView: View {
                         Image(systemName: "house")
                         Text("Home")
                     }
+                    
                 DiscoverView()
                     .tabItem{
                         Image(systemName: "safari")
@@ -37,6 +38,7 @@ struct ContentView: View {
             }
         }
         .environmentObject(mealSaved)
+        .scrollIndicators(.hidden)
     }
 }
 

@@ -44,10 +44,43 @@ private struct SectionMealView:View{
     }
 }
 
+private struct SectionBookmarkMealView:View{
+    
+    var title:String
+    
+    var meals:Array<Meal>?
+    
+    var body: some View{
+        VStack{
+            CustomTitleCatDashBoard(title: title)
+            if meals != nil && meals?.count ?? 0 > 0 {
+                ScrollView(.horizontal){
+                    HStack{
+                        Spacer()
+                        ForEach(Array(meals!), id:\.self) { meal in
+                            CustomCardMeal(
+                                meal: meal
+                            )
+                        }
+
+                    }
+                }
+                
+                                        
+            }else{
+                Text("Sin recetas guardadas")
+                    .frame(width: 150, height: 210)
+            }
+        }
+    }
+}
+
+
 struct HomeView: View {
     
     @StateObject private var viewModel = HomeViewModelImpl(service: MealServiceImpl())
 
+    @EnvironmentObject var mealSaved:CustomCardMealServiceImpl
     
     var body: some View {
         NavigationView {
@@ -58,7 +91,7 @@ struct HomeView: View {
                     CustomBanner()
                     SectionMealView(title: "Recent Recipes", meals: viewModel.listMealsRecentRecipes)
                     SectionMealView(title: "Your Recipes", meals: viewModel.listMealsYourRecipes)
-                    SectionMealView(title: "Your Bookmark", meals: viewModel.listMealsYourBookmark)
+                    SectionBookmarkMealView(title: "Your Bookmark", meals: mealSaved.mealsSaved)
                 }
             }
             .navigationTitle("Cookpedia")
